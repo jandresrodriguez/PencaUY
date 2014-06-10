@@ -21,6 +21,10 @@
 		</tbody>
 	</table>
 </div>
+<div id="countdown" >
+	<div id="clock-wrap"><span id="clock"></span></div>
+		
+</div>
 
 <div id="comments">
 
@@ -49,6 +53,7 @@
 </div>
 
 <div id="table-comments">
+
 	<table class="table table-border">
 		<tbody>
 			<% Comment.find(:all, :order => "fecha DESC").each do |c| %>
