@@ -17,6 +17,14 @@
  	font-weight: bold;
  }
 
+ body{
+ 	background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+
  #table{
  	width: 60%;
  	margin: 60px auto;
@@ -81,4 +89,15 @@
 
  ::-webkit-scrollbar { 
     display: none; 
+}
+
+@media (max-device-width: 640px){
+	#comments{
+		position:relative;
+		top: 450px;
+	}
+
+	#table-comments{
+		margin-top: 470px;
+	}
 }
