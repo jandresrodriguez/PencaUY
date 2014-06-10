@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Penca</title>
+	<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+	<%= favicon_link_tag 'icon.ico' %>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<%= yield %>
+
+
+	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<script>
+$.backstretch([
+      "<%= asset_path 'bg1.jpg' %>"
+      ,  "<%= asset_path 'bg2.jpg' %>"
+      ,  "<%= asset_path 'bg3.jpg' %>"
+    ], {duration: 7000, fade: 750});
+</script>
+</body>
+
+</html>
