@@ -66,3 +66,15 @@
  	font-size: 80px;
  	font-weight: 400;
  }
+
+ .panel-heading{
+ 	background-color: #c7d83e !important;
+ 	text-align: center;
+ 	
+ }
+
+ .panel-title{
+ 	font-weight: bold;
+ 	font-size: 30px !important;
+ 	color: rgba(0, 0, 0, 0.9);;
+ }
