@@ -16,13 +16,11 @@
 
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 <script>
-$( window ).load(function() {
   $.backstretch([
       "<%= asset_path 'bg1.jpg' %>"
       ,  "<%= asset_path 'bg2.jpg' %>"
       ,  "<%= asset_path 'bg33.jpg' %>"
     ], {duration: 7000, fade: 750});
-});
 
 </script>
 <div id="audio"><audio autoplay="true" src="mundial.mp3"></div>
