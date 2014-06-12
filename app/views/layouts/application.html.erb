@@ -10,10 +10,36 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div id="navigation-bar">
+        <nav class="navbar navbar-custom" role="navigation">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="primera"><%= link_to "HOME", root_path %></li>
+                <li><%= link_to "PRONOSTICOS DE CADA UNO", pronos_path%></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+       </div>
 	
 	<%= yield %>
 
-
+<div id="footer">
+  <p>Developed by <%= image_tag "JETLABS.png" , height: '30' %> </p>
+  
+</div>
 	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 <script>
   $.backstretch([

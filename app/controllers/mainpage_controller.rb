@@ -3,5 +3,6 @@ class MainpageController < ApplicationController
   	@comment = Comment.new
   end
 
-  
+  def pronos
+  end
 end
