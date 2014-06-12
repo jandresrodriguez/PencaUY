@@ -27,6 +27,10 @@
  	margin-bottom: 20px !important;
  }
 
+ .navbar a{
+ 	color: #666;
+ }
+
 
   .navbar a:hover{
 	color:#c7d83e !important;
