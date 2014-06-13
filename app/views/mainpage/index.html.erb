@@ -9,7 +9,7 @@
 		</thead>
 		<tbody>
 			<% position = 1 %>
-			<% Player.find(:all, :order => "points" ).each do |u| %>
+			<% Player.find(:all, :order => "points DESC" ).each do |u| %>
 				<tr>
 					<td><%= position %></td>
 					<td><%= u.name %></td>
