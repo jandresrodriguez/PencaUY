@@ -135,6 +135,23 @@
 	padding-top: 10px;
 
 }
+.black{
+	background-color: rgba(0, 0, 0, 0.92);
+	color: rgba(255, 255, 255, 0.95);
+}
+
+.black-heading{
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.97);
+	padding: 10px 0;
+	color: rgba(255, 255, 255, 0.95);
+}
+
+#puntajes{
+	position:relative;
+	top: 150px;
+	border-color: #000;
+}
 
 
 @media (max-device-width: 640px){
@@ -145,5 +162,9 @@
 
 	#table-comments{
 		margin-top: 470px;
+	}
+
+	#puntajes{
+		display: none;
 	}
 }
