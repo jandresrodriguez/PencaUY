@@ -90,9 +90,9 @@
 		<tbody>
 			<% Comment.find(:all, :order => "fecha DESC").each do |c| %>
 				<tr>
-					<td><%= c.user %></td>
+					<td style="width: 15%;"><%= c.user %></td>
 					<td><%= c.text %></td>
-					<td><%= distance_of_time_in_words(c.fecha, Time.now) %></td>
+					<td style="width: 15%;"><%= distance_of_time_in_words(c.fecha, Time.now) %></td>
 				</tr>
 			<% end %>
 		</tbody>
